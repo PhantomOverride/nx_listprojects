@@ -1,0 +1,6 @@
+{
+	"refreshToken": "some JWT",
+	"deviceId": "some GUID",
+	"organizationId": "some string",
+	"actingUserId": "some string"
+}
