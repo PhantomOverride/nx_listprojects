@@ -2,9 +2,12 @@
 import requests
 import xml.etree.ElementTree as ET
 import json
+import os
+
+configpath = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json")
 
 try:
-	with open('config.json', 'r') as config_file:
+	with open(configpath, "r") as config_file:
 		config = json.load(config_file)
 except FileNotFoundError:
 	print("File 'config.json' does not exist. Rename config.sample and paste your config in it.")
